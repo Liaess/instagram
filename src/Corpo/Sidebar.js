@@ -1,3 +1,4 @@
+import Usuario from "./Usuario"
 const cadaSugestao = [
     {imagem: "assets/img/bad.vibes.memes.svg", nomeConta: "bad.vibes.memes", seguirInfo: "Segue você"},
     {imagem: "assets/img/chibirdart.svg", nomeConta: "chibirdart", seguirInfo: "Segue você"},
@@ -9,14 +10,7 @@ const cadaSugestao = [
 export default function Sidebar(){
     return(
         <div class="sidebar">
-            <div class="usuario">
-            <img src="assets/img/catanacomics.svg" />
-            <div class="texto">
-                <strong>catanacomics</strong>
-                Catana
-            </div>
-            </div>
-
+            <Usuario imagem="assets/img/catanacomics.svg" usuario="catanacomics" nome="Catana"/>
             <div class="sugestoes">
             <div class="titulo">
                 Sugestões para você
